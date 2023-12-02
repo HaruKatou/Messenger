@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="493.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.CallController">
+   <children>
+      <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#intoChat" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/back4.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="83.0" layoutX="160.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/shikiice.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="53.0" layoutX="167.0" layoutY="360.0" onMouseClicked="#intoChat" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/callstop.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="46.0" layoutX="89.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/2830311.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="53.0" layoutX="160.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/mute1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="67.0" layoutX="243.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/video1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="171.0" prefHeight="36.0" prefWidth="151.0" text="RYOUGI SHIKI">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

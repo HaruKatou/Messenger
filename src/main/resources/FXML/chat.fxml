@@ -1,14 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="535.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.ChatController">
+   <children>
+      <Line endX="322.0" layoutX="93.0" layoutY="97.0" startX="-100.0" />
+      <ImageView fitHeight="61.0" fitWidth="58.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/shikiice.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="14.0" layoutY="494.0" onMouseClicked="#intoMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/back4.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="85.0" layoutY="47.0" text="Active now">
+         <font>
+            <Font name=".VnArial" size="13.0" />
+         </font>
+      </Label>
+      <Circle fill="#1fff34" layoutX="65.0" layoutY="55.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField layoutX="117.0" layoutY="497.0" prefHeight="25.0" prefWidth="235.0" promptText="Aa" />
+      <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="327.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/emoji.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="377.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/knife.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CallController" fitHeight="25.0" fitWidth="25.0" layoutX="340.0" layoutY="18.0" onMouseClicked="#intoCall" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/call1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="25.0" layoutX="381.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/menu1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="67.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Picture/gallery.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="161.0" layoutY="106.0" prefHeight="17.0" prefWidth="87.0" text="Today" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="346.0" layoutY="139.0" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: Gray;" text="Hey Shiki" textFill="#171717" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="188.0" prefHeight="32.0" prefWidth="253.0" style="-fx-background-color: Gray;" text="Where did you go? I'm at your home right now" textFill="#171717">
+         <font>
+            <Font name=".VnArial" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="251.0" prefHeight="32.0" prefWidth="201.0" style="-fx-background-color: pink;" text="Shut up idiot, have some manner" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="299.0" prefHeight="32.0" prefWidth="243.0" style="-fx-background-color: pink;" text="Went to the grocery stores for ice cream" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="348.0" prefHeight="32.0" prefWidth="87.0" style="-fx-background-color: pink;" text="Want some?" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="269.0" layoutY="390.0" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: Gray;" text="I'm on my way honey!!!" textFill="#171717">
+         <font>
+            <Font name=".VnArial" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="269.0" layoutY="431.0" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: Gray;" text="Spare some for me!!!" textFill="#171717">
+         <font>
+            <Font name=".VnArial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="14.0" prefHeight="25.0" prefWidth="76.0" text="Ryougi Shiki" />
+   </children>
 </AnchorPane>
